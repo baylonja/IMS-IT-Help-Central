@@ -1,86 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                <title>IMS IT Help Central</title>
-            
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-            <link rel="stylesheet" href="style.css">
-                <style>
-                    div{border: solid 0px rgb(255, 255, 255);
-                    }
-            
-                </style> 
-            </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  
+  <style>div{border: solid 0px rgb(255, 253, 253);}</style> 
+  
+  <title>IMS IT Help Central</title>
+</head>
 <body>
+
+<!-- Banner -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" style="font-family: Verdana, Geneva, Tahoma, sans-serif">IMS IT Help Central </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home |<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Our Services |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">About Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<br>
+
+<!-- Mac@IBM, PC@IBM, Linux@IBM and IT Announcement -->
+<div class="container-fluid">
+    <div class="row">
+
+              <!-- Mac@IBM -->
+              <div class="col-sm">
+                      <div class="card">
+                          <img class="card-img-top" src="AppleLogo.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title" style="text-align: center">Mac@IBM</h5>
+                                <p class="card-text">These are workstations that has been issued to users.</p>
+                                <a href="macibm.html" class="btn btn-primary" style="">View</a>
+                              </div>
+                      </div>        
+              </div>
+
+              <!-- PC@IBM -->
+              <div class="col-sm">
+                      <div class="card">
+                        <img class="card-img-top" src="Windows10Logo.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title" style="text-align: center">PC@IBM</h5>
+                                <p class="card-text">These are workstations that has been issued to users.</p>
+                                <a href="#" class="btn btn-primary" >View</a>
+                              </div>
+                      </div>
+              </div>
+
+              <!-- Linux@IBM -->
+              <div class="col-sm">
+                      <div class="card">
+                          <img class="card-img-top" src="LinuxLogo.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="text-align: center">Linux@IBM</h5>
+                                  <p class="card-text">These are workstations that has been issued to users.</p>
+                                  <a href="#" class="btn btn-primary">View</a>
+                                </div>
+                      </div>
+              </div>
+
+              <!-- IT Announcement -->
+              <div class="col-sm-6">
+                      <div class="card" style="height: 25.5rem;">
+                                <div class="card-header" style="font-weight: 600; font-size: 20px">
+                                      IT Announcements
+                                </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Symantec Endpoint Protections Does Not Start</h5>
+                            <p class="card-text" style="font-size: 14px;">Symantec Endpoint Protection does not start after installing the Windows Patch.
+                                    The latest Windows patch from Microsoft was a patch to fix this Meltdown/Sceptre malware and it inadvertently caused issues with SEP. When the Windows team realized SEP was not running, they stopped the patch from going out to Win 7 users. 
+                                    For Win 7 users, the security team will push SEP 14 from Monday/Tuesday. Once SEP 14 is installed, those users will receive the Windows patch update that fixes Meltdown/Sceptre malware issue.
+                                    The Windows patch will go out to Win 10 users from 23-Jan onwards. For Win 7 users, it will be after the user has upgraded to SEP 14. SEP 14 will be distributed via EZUpdate from 22-Jan or 23-Jan.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                          </div>
+                      </div>
+              </div>
+    </div>
+
+    <br>
+
+    <!-- ROW2 -->
+    <div class="row">
+
+              <!-- Print@IBM -->
+              <div class="col-sm">
+                      <div class="card">
+                          <img class="card-img-top" src="PrinterLogo.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="text-align: center">Print@IBM</h5>
+                                  <p class="card-text">These are workstations that has been issued to users.</p>
+                                  <a href="#" class="btn btn-primary" style="">View</a>
+                                </div>
+                       </div>
+              </div>
+
+              <!-- Mobile@IBM -->
+              <div class="col-sm">
+                      <div class="card">
+                          <img class="card-img-top" src="IOSAndroid.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="text-align: center">Mobile@IBM</h5>
+                                  <p class="card-text">These are workstations that has been issued to users.</p>
+                                  <a href="#" class="btn btn-primary" >View</a>
+                                </div>
+                      </div>
+              </div>
+
+              <!-- Email@IBM -->
+              <div class="col-sm">
+                      <div class="card">
+                          <img class="card-img-top" src="EmailLogo.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="text-align: center">Mail@IBM</h5>
+                                  <p class="card-text">These are workstations that has been issued to users.</p>
+                                  <a href="#" class="btn btn-primary">View</a>
+                                </div>
+                      </div>
+              </div>
+
+              <!-- Video Clips -->
+              <div class="col-sm-6">
+                      <div class="card">
+                          <div class="card-header" style="font-weight: 600; font-size: 20px">
+                                  Video Clips
+                          </div>
+                                <div class="embed-responsive embed-responsive-16by9" style="height: 22rem;">
+                                      <iframe class="embed-responsive-item"
+                                      src="https://www.youtube.com/embed/HgqwPMAdlCM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                      </div>
+              </div>
+    </div>
+
+    <br>
+
+    <!-- ROW3 -->
+    <div class="row">
+
+              <!-- Video@IBM -->
+              <div class="col-sm">
+                      <div class="card">
+                          <img class="card-img-top" src="VideoLogo.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title" style="text-align: center">Video@IBM</h5>
+                                <p class="card-text">These are workstations that has been issued to users.</p>
+                                <a href="#" class="btn btn-primary" style="">View</a>
+                              </div>
+                      </div>         
+              </div>
+
+              <!-- Mobile@IBM -->
+              <div class="col-sm">
+                      <div class="card">
+                          <img class="card-img-top" src="HelpLogo.png" alt="Card image cap" style="height: 11rem;">
+                              <div class="card-body">
+                                <h5 class="card-title" style="text-align: center">Help@IBM</h5>
+                                <p class="card-text">These are workstations that has been issued to users.</p>
+                                <a href="#" class="btn btn-primary" >View</a>
+                              </div>
+                      </div>      
+              </div>
+  
+            <div class="col-sm-8">
+                      <div class="card" style="height: 25rem;">
+                          <div class="card-header" style="font-weight: 600; font-size: 20px">
+                                    IT Checklist
+                          </div>
+                              <ul class="nav nav-tabs">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" href="#">On-Boarding</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Off-Boarding</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Request Workstation</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact Support</a>
+                                      </li>
+                                    </ul>
+                      </div>         
+            </div>
+
+
     
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#" style="font-family: Verdana, Geneva, Tahoma, sans-serif">IMS IT Help Central </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home |<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Our Services  |</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">About Us</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
-
-              <br>
-
-            <div class="row">
-
-                <div class="col-1"></div>
-
-                <div class="col">
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="width: 20rem">
-                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="macibm.html" role="tab" aria-controls="v-pills-home" aria-selected="true">Mac@IBM</a>
-                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="macoverview.html" role="tab" aria-controls="v-pills-profile" aria-selected="false">Overview</a>
-                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="macmodelsair13.html" role="tab" aria-controls="v-pills-profile" aria-selected="false">Workstation Models</a>
-                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Setup a Mac</a>
-                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Connecting to IBM Network</a>
-                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Frequently Asked Questions</a>
-                        </div>
-                </div>
-                
-                <div class="col">
-                        <div class="card" style="width: 45rem" "height: 90rem">
-                            <ul class="nav nav-tabs">
-                                <li class="nav-item">
-                                  <a class="nav-link active" href="#">Active</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link disabled" href="#">Disabled</a>
-                                </li>
-                              </ul>
-                        </div>
-                </div>
-
-                <div class="col"></div>
+    </div>
 
 
-            </div>              
+
+</div>
+
+
+
+
+<!-- CodeJS Script -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>    
+
+<script>
+  // $('.carousel').carousel('cycle')
+  $('.carousel').carousel({
+  interval: 500
+});
+</script>
+
 
 </body>
 </html>
