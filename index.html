@@ -7,6 +7,7 @@
   
   <!-- Bootstrap Link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   
   <style>div{border: solid 0px rgb(255, 253, 253);}</style> 
@@ -16,30 +17,52 @@
 <body>
 
 <!-- Banner -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html" style="font-family: Verdana, Geneva, Tahoma, sans-serif">IMS IT Help Central </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home |<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Our Services |</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">About Us</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="index.html" style="font-family: Verdana, Geneva, Tahoma, sans-serif">IMS IT Help Central </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="index.html">Home |<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="index.html">Our Services |</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#">About Us</a>
+                                </li>
+                              </ul>
+        </div>                          
+
+                                  <div class="col-sm-4">
+                                      <ul class="list-inline text-right">
+                                          <li class="list-inline-item">
+                                              <a target="_blank" href="https://en-gb.facebook.com/login/">
+                                                  <i class="fa fa-facebook fa-2x"></i>
+                                              </a>
+                                          </li>
+                                          <li class="list-inline-item">
+                                              <a target="_blank" href="https://twitter.com/?lang=en">
+                                                  <i class="fa fa-twitter fa-2x"></i>
+                                              </a>
+                                          </li>
+                                          <li class="list-inline-item">
+                                              <a target="_blank" href="https://www.instagram.com/?hl=en">
+                                                  <i class="fa fa-instagram fa-2x"></i>                                                
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                        </nav>    
+    </div>           
+</div>
 
 <br>
 
@@ -186,24 +209,101 @@
               </div>
   
             <div class="col-sm-8">
-                      <div class="card" style="height: 25rem;">
+                      <div class="card" style="height: 25.5rem overflow: auto">
                           <div class="card-header" style="font-weight: 600; font-size: 20px">
                                     IT Checklist
                           </div>
-                              <ul class="nav nav-tabs">
-                                      <li class="nav-item">
-                                        <a class="nav-link active" href="#">On-Boarding</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Off-Boarding</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Request Workstation</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact Support</a>
-                                      </li>
-                                    </ul>
+                          <nav>
+                              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">On-Boarding</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Off-Boarding</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Request Workstation</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Returning Workstation</a>                               
+                              </div>
+                              <br>
+
+                          </nav>
+                            <div class="tab-content" id="nav-tabContent" style="width: 770px; padding-left: 30px">
+                              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                  <table class="table">
+                                      <thead class="thead-light">
+                                        <tr>
+                                          <th scope="col"></th>
+                                          <th scope="col">Buddy Checklist</th>
+                                          <th scope="col">Access Link</th>
+                                          <th scope="col">Comment</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Apply for Level 3 CAS Access</td>
+                                          <td>ITSRM</td>
+                                          <td>Lotus Notes Database</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td> Apply for Desk Phone and SUT</td>
+                                          <td>ITSRM</td>
+                                          <td>Lotus Notes Database</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Obtain Intranet ID and Password from Manager</td>
+                                          <td>-</td>
+                                          <td>-</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">4</th>
+                                          <td>Obtain Notes ID and Password from Manager</td>
+                                          <td>-</td>
+                                          <td>-</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">5</th>
+                                          <td> Issue Workstation Laptop from IT</td>
+                                          <td>-</td>
+                                          <td>This has to be done on the first day.</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    
+                                    <table class="table">
+                                      <thead class="thead-light">
+                                        <tr>
+                                          <th scope="col">#</th>
+                                          <th scope="col">First</th>
+                                          <th scope="col">Last</th>
+                                          <th scope="col">Handle</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                              
+                              
+                              </div>
+                              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt officia. Fugiat velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. Irure magna elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. Eiusmod consequat eu adipisicing minim anim aliquip cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure Lorem incididunt nostrud.Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt officia. Fugiat velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. Irure magna elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. Eiusmod consequat eu adipisicing minim anim aliquip cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure Lorem incididunt nostrud.</div>
+                              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt officia. Fugiat velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. Irure magna elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. Eiusmod consequat eu adipisicing minim anim aliquip cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure Lorem incididunt nostrud.</div>
+                            </div>
                       </div>         
             </div>
 
