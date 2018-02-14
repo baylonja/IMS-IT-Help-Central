@@ -1,29 +1,3 @@
-<?php
-
-if ($_POST["button"]=="Submit") 
-{
-    $servername = "9.127.37.189";
-    $username = "root";
-    $password = "IMS1bmsg";
-    $dbname = "imsithelpcentral";
-
-    $mysqli = new mysqli($servername, $username, $password, $dbname);
-            if ( $mysqli->connect_error ) 
-            {
-              die( 'Connect Error: ' . $mysqli->connect_errno . ': ' . $mysqli->connect_error );
-            }
-
-    $sql = "INSERT INTO imsithelpcentral ( Title, Date, Content ) VALUES ( '{$mysqli->real_escape_string($_POST['Title'])}', '{$mysqli->real_escape_string($_POST['Date'])}', '{$mysqli->real_escape_string($_POST['Content'])}' )";
-            
-            $insert = $mysqli->query($sql);
-            $mysqli->close();
-            header('Location: AnnouncementSubmitted.html')
-
-  }
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,6 +118,30 @@ if ($_POST["button"]=="Submit")
   interval: 500
 });
 </script>
+
+<?php
+
+// if ($_POST["button"]=="Submit") 
+{
+    $servername = "9.127.37.189";
+    $username = "root";
+    $password = "IMS1bmsg";
+    $dbname = "imsithelpcentral";
+
+    $mysqli = new mysqli($servername, $username, $password, $dbname);
+            if ( $mysqli->connect_error ) 
+            {
+              die( 'Connect Error: ' . $mysqli->connect_errno . ': ' . $mysqli->connect_error );
+            }
+
+    $sql = "INSERT INTO imsithelpcentral ( Title, Date, Content ) VALUES ( '{$mysqli->real_escape_string($_POST['Title'])}', '{$mysqli->real_escape_string($_POST['Date'])}', '{$mysqli->real_escape_string($_POST['Content'])}' )";
+            
+            $insert = $mysqli->query($sql);
+            $mysqli->close();
+            header('Location: AnnouncementSubmitted.html');
+}
+
+?>
 
 
 </body>
