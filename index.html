@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="page.css">
   
-  <style>div{border: solid 0px rgb(255, 253, 253);}</style> 
+  <style>div{border: solid 0px rgb(255, 255, 255);}</style> 
   
   <title>IMS IT Help Central</title>
 </head>
@@ -114,18 +115,16 @@
               <!-- IT Announcement -->
               <div class="col-sm-6">
                       <div class="card" style="height: 25rem;">
-                                <div class="card-header" style="font-weight: 600; font-size: 20px">
+                          <a href="itannouncement.html" style="text-decoration: none"><div class="card-header" style="font-weight: 600; font-size: 20px">
                                       IT Announcements
                                 </div>
-                          <div class="card-body">
-                            <h5 class="card-title">Symantec Endpoint Protections Does Not Start</h5>
-                            <p class="card-text" style="font-size: 16px;">Symantec Endpoint Protection does not start after installing the Windows Patch.
-                                    The latest Windows patch from Microsoft was a patch to fix this Meltdown/Sceptre malware and it inadvertently caused issues with SEP. When the Windows team realized SEP was not running, they stopped the patch from going out to Win 7 users. 
-                                    For Win 7 users, the security team will push SEP 14 from Monday/Tuesday. Once SEP 14 is installed, those users will receive the Windows patch update that fixes Meltdown/Sceptre malware issue.
-                                    The Windows patch will go out to Win 10 users from 23-Jan onwards. For Win 7 users, it will be after the user has upgraded to SEP 14. SEP 14 will be distributed via EZUpdate from 22-Jan or 23-Jan.</p>
-                            <!-- <a href="#" class="btn btn-primary">Read More</a> -->
-                          </div>
-                      </div>
+                                <div class="card-body">   
+                                    <div class="embed-responsive embed-responsive-16by9" style="height: 23rem;">
+                                        <iframe class="embed-responsive-item"
+                                        src="pulloutannounce.php" frameborder="0"></iframe>
+                                    </div>                                                           
+                                </div>
+                      </div>                       
               </div>
     </div>
 
@@ -227,15 +226,15 @@
                                       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                                     </ol>
                                     <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img class="d-block w-100" src="https://www-935.ibm.com/services/us/gbs/thoughtleadership/images/DR_Elecct_ST_Twitter_Tile_1.png" alt="First slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="https://www-935.ibm.com/services/us/gbs/thoughtleadership/images/DR_Elecct_ST_Twitter_Tile_2_new_version.png" alt="Second slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="https://www-935.ibm.com/services/us/gbs/thoughtleadership/images/DR_Elecct_ST_Twitter_Tile_3.png" alt="Third slide">
-                                      </div>
+                                        <div class="carousel-item active">
+                                              <img class="d-block w-100" src="https://www-935.ibm.com/services/us/gbs/thoughtleadership/images/DR_Elecct_ST_Twitter_Tile_1.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                              <img class="d-block w-100" src="https://www-935.ibm.com/services/us/gbs/thoughtleadership/images/DR_Elecct_ST_Twitter_Tile_2_new_version.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                              <img class="d-block w-100" src="https://www-935.ibm.com/services/us/gbs/thoughtleadership/images/DR_Elecct_ST_Twitter_Tile_3.png" alt="Third slide">
+                                        </div>
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -245,8 +244,9 @@
                                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                       <span class="sr-only">Next</span>
                                     </a>
-                                  </div>
-                </div>
+                          </div>
+                </div>         
+            </div>
     </div>
 
 
@@ -257,7 +257,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script type="text/javascript" src="index.js"></script>  
+<script type="text/javascript" src="index.js"></script>
+<!-- <script type="text/javascript" src="javascript.js"></script>   -->
 
 <script>
   // $('.carousel').carousel('cycle')

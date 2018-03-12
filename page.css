@@ -2,3 +2,66 @@ input[type]:-webkit-autofill {
 	
     box-shadow: 0 0 0px 1000px white inset;
 }
+
+.Date
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.myframe
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+/* Adding Card-header: subcrible ot blue */
+/* .card-header{ */
+    /* background-color:blue !important; */
+    /* text-align:center; */
+/* } */
+
+
+  #dialogoverlay {
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #dialogbox {
+    display: none;
+    position: fixed;
+    background: #999;
+    border-radius: 7px;
+    width: 550px;
+    z-index: 10;
+  }
+
+  #dialogbox>div {
+    background: #ccc;
+    margin: 8px;
+  }
+
+  #dialogbox>div>#dialogboxhead {
+    background: #667;
+    font-size: 19px;
+    padding: 10px;
+    color: #FFF;
+  }
+
+  #dialogbox>div>#dialogboxbody {
+    background: #ccc;
+    padding: 20px;
+    color: rgb(67, 31, 199);
+  } 
+
+  #dialogbox>div>#dialogboxfoot {
+    background: #667;
+    padding: 10px;
+    text-align: right;
+  } 
